@@ -20,21 +20,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyP.json()); // for parsing application/json
 
 
-var db    = mysql.createConnection({
+/*var db    = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : 'root',
   database : 'doodle'
 });
-    
+  */  
 
 app.get('/', function(request, response) {
   response.render('index.twig');
 });
 
-app.get('/test', function(request, response) {
-  //response.send('pages/index.twig');
-});
 
 
 app.listen(process.env.PORT , function() {
