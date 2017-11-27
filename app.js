@@ -19,7 +19,7 @@ app.use(session( {
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyP.json()); // for parsing application/json
 
-
+/*
 var db    = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
@@ -27,7 +27,7 @@ var db    = mysql.createConnection({
   database : 'doodle'
 });
     
-
+*/
 app.get('/', function(request, response) {
   response.render('index.twig');
 });
