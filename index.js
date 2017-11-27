@@ -33,7 +33,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/test', function(request, response) {
-  response.send('projets.twig');
+  response.render('projets.twig');
 });
 
 
