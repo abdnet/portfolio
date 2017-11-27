@@ -32,8 +32,12 @@ app.get('/', function(request, response) {
   response.render('index.twig');
 });
 
-app.get('/test', function(request, response) {
+app.get('/projet', function(request, response) {
   response.render('projets.twig');
+});
+
+app.get('/about', function(request, response) {
+  response.render('about.twig');
 });
 
 
